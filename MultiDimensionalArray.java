@@ -14,10 +14,9 @@ public class MultiDimensionalArray {
             }
         }
         System.out.println("the matrix/2d array is ");
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-                System.out.print(arr[i][j]+"\t");
-            }
+        //traversing the array using for-each loop
+        for(int[] i:arr){
+            for(int j:i) System.out.print(j+"\t");
             System.out.println();
         }
     }
