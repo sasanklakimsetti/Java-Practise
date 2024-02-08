@@ -47,8 +47,8 @@ Constraints:
 0 <= val <= 100
  */
 
-import java.util.Scanner;
 import java.util.Collections;
+import java.util.Scanner;
 import java.util.Arrays;
 public class RemoveElement{
     public static void main(String[] args){
