@@ -1,0 +1,15 @@
+for(int i=2;i<=n;i++){
+                if(sum2<n){
+                    sum1+=i*i;
+                    if(sum1>n){
+                        sum2+=(i-1)*(i-1);
+                        count++;
+                    }
+                    else if(sum1<=n){
+                        sum2+=i*i;
+                        count++;
+                    }
+                    else break;
+                }
+                else break;
+            }
