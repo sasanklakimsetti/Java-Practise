@@ -1,3 +1,4 @@
+package leetcode;
 /*
 Given an integer x, return true if x is a 
 palindrome
@@ -27,7 +28,7 @@ Constraints:
 -231 <= x <= 231 - 1
 */
 
-class Solution {
+class palindrome {
     public boolean isPalindrome(int x) {
         boolean palindrome=false;
         String str=String.valueOf(x);
