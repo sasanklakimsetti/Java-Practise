@@ -50,7 +50,7 @@ class Person{
 public class Classes {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        Person p1=new Person();      //will print default constructor after creation of object as we haven't given any parameters inside the constructor
+        Person1 p1=new Person1();      //will print default constructor after creation of object as we haven't given any parameters inside the constructor
         System.out.print("enter no.of entries: ");int n= sc.nextInt();
         sc.nextLine();
         for(int i=1;i<=n;i++) {
@@ -66,7 +66,7 @@ public class Classes {
             sc.nextLine();
         }
         //calling constructor
-        Person p2=new Person("Karthikeya",18,'M');   //will print parameterized constructor as we have given parameters inside the constructor;
+        Person1 p2=new Person1("Karthikeya",18,'M');   //will print parameterized constructor as we have given parameters inside the constructor;
         p2.stnd="BSE";     //here the initializer block has been changed from B.Tech to BSE and we can see the output of the new value
         p2.print(p2.name, p2.age, p2.getter());
     }
