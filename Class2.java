@@ -1,12 +1,13 @@
 class Car{
-    int wheels;
-    {
-        wheels=4;
-    }
     String company;
     String model;
     String fuelType;
     int seatCapacity;
+    //initializer block
+    int wheels;
+    {
+        wheels=4;
+    }
     public Car(String company, String model, String fuelType, int seatCapacity){
         this.company=company;
         this.model=model;
