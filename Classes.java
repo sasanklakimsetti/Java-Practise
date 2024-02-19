@@ -25,6 +25,7 @@ class Person{
     public Person(){
         System.out.println("Default constructor");
     }
+    //when we create a parameterized constructor, the default constructor will be overridden and when we create an object in defualt way there might be an issue. If we want to create an obj in default way then the defalt constructor  nmust be created
     public Person(String name, int age, char sex){
         System.out.println("Parameterized constructor");
         this.name=name;    //as the names of parameters and public identifiers are same there will be an ambiguity error as compiler gets confused which 'name' does it refer to the one inside the constructor parameter or the one inside the class

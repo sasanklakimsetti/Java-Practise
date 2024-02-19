@@ -8,6 +8,8 @@ public class FactorFromString {
                        if(n%i==0){
                                fact=i;
                        }
+                       else
+                           fact=n;
                }
                return fact;
         }
