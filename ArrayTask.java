@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class ArrayTask {
     //approach 2
     //time complexity O(1)
-//    static void majority(int[] arr){
-//        Arrays.sort(arr);
-//        int mid=(arr.length-1)/2;
-//        System.out.println(arr[mid]);
-//    }
+    static void majority(int[] arr){
+        Arrays.sort(arr);
+        int mid=(arr.length-1)/2;
+        System.out.println(arr[mid]);
+    }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.print("enter the size of array: ");int n=sc.nextInt();
@@ -40,7 +40,7 @@ public class ArrayTask {
                 count=0;
         }
         System.out.println("\nThe num getting repeated n/2 times is "+max);
-//        System.out.print("The num getting repeated n/2 times using approach 2 is ");
-//        majority(arr);
+        System.out.print("The num getting repeated n/2 times using approach 2 is ");
+        majority(arr);
     }
 }
