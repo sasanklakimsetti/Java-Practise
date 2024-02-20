@@ -1,5 +1,6 @@
 import java.util.Scanner;
 //take a number input from user in string format and find the maximum factor of last two digits of the number that user has inputted
+//this question has been asked in a coding examination in my college
 public class FactorFromString {
         public static long maxFactor(long n){
                long fact=0;
