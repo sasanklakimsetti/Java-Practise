@@ -17,7 +17,7 @@ class Parent{
         System.out.println("Default constructor of Parent class");
     }
     Parent(int a){
-        System.out.println("Parameterized class of Parent class");
+        System.out.println("Parameterized constructor of Parent class");
         this.a=a;
     }
 }
@@ -29,6 +29,10 @@ class Child1 extends Parent{
         System.out.println("Default constructor of Child class");
     }
     Child1(int a){
+        super(a);   //calls the parameterized constructor of parent/superclass
+        //if we want to call the default constructor of A then just use super().
+        //if parameterized, then use super(parameter)
+        //it can only be done once in one of the way as the constructor can only be called once in the lifetime of  the object during its creation
         System.out.println("Parameterized constructor of Child class");
         this.a=a;
     }
@@ -40,3 +44,16 @@ public class Inheritance {
         Child1 c2=new Child1(1);
     }
 }
+
+//types of inheritance in java
+//single : a extends b
+//hierarchical : a extends b , a extends c
+//multilevel : a extends b, b extends c
+//hybrid : mix of any two
+
+//not supported in java
+//multiple : a,b extends c
+//reason : class inherits from multiple classes having same methods the compiler would get confused with which method to call
+//to avoid this, we have used virtual keyword in c++ but there is no such thing in java
+//ex : a extends b,c and b,c extends d
+//there will be confusion to d to inherit which parent's method as they have same method names. this is called diamond problem
