@@ -36,6 +36,7 @@ class Child1 extends Parent{
         System.out.println("Parameterized constructor of Child class");
         this.a=a;
     }
+    //super().Parent;  // to inherit all methods of the parent class
 }
 public class Inheritance {
     public static void main(String[] args){
