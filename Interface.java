@@ -26,8 +26,29 @@ class DelhiBranch implements Loan,creditCard{
 //        System.out.println("del1234");
 //    }
     Scanner sc=new Scanner(System.in);
-    int homeLoan(int amount){
+    public int homeLoan(int amount){
         System.out.print("enter amount: ");int am=sc.nextInt();
+        return am;
+    }
+
+    @Override
+    public int edLoan(int amount) {
+        return 0;
+    }
+
+    @Override
+    public void premium(int salary) {
+
+    }
+
+    @Override
+    public void standard(int salary) {
+
+    }
+
+    @Override
+    public void basic(int salary) {
+
     }
 }
 
