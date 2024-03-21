@@ -33,6 +33,11 @@
 //way 3 using lambda expression
 public class Threads{
     public static void main(String[] args){
-
+        Runnable obj = () -> {
+            System.out.println("RIT");
+        };
+        Thread t = new Thread(obj);
+        t.start();
+        System.out.println("MT");
     }
 }
