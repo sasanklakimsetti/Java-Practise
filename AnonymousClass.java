@@ -35,3 +35,6 @@ public class AnonymousClass {
     }
 }
 
+//we can instantiate only one object for an anonymous class since it has no name and it's scope is upto the braces only. So if we create any object we have no idea that this object belongs to this class.
+//So we can only instantiate one object only.
+
