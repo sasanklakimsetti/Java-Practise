@@ -37,7 +37,7 @@ public class Threads{
             System.out.println("RIT");
         };
         Thread t = new Thread(obj);
-        t.start();
+        t.start();  //this is internally calling run() method
         System.out.println("MT");
     }
 }
