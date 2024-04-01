@@ -4,7 +4,7 @@
 //2.Non-static : local, anonymous: (a class without name, only single instance can be created) (either extend a class or implement an interface at a time. can't do both at single time) (can't declare static initializers, if there is any static member, it needs to be declared as final)
 
 //features of nested classes
-//nested classes are bounded in the scope of outer class i.e. whatever it can do, can do insided the outer class only
+//nested classes are bounded in the scope of outer class i.e. whatever it can do, can do inside the outer class only
 //nested classes are closely coupled to outer class i.e. first instantiate Outer class OC and then with reference of OC instantiante object NC.
 class OC{
     //nested class / inner class
