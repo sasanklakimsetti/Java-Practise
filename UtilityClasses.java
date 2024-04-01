@@ -1,5 +1,6 @@
 //inbuilt functions in java
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 
 public class UtilityClasses {
     public static void main(String[] args){
@@ -20,5 +21,24 @@ public class UtilityClasses {
         System.out.println("Current Date and Time in Europe/Athens is "+zt);
 
         System.out.println(Period.between(d,d2));  //returns no.of days between given two dates
+
+        LocalDate ld3=LocalDate.parse("2002-11-12");
+        System.out.println(ld3);
+        LocalDate ld4=LocalDate.of(2023,07,07);
+        System.out.println(ld4);
+
+        LocalDate  ld5=LocalDate.now();
+        System.out.println(ld5);
+        LocalDate ld6=ld5.plusMonths(50);
+        System.out.println(ld6);
+        Period p1=Period.between(ld5,ld6);
+        System.out.println(p1);
+
+        DateTimeFormatter f=DateTimeFormatter.ofPattern("dd-MM-yyyy");    //month must be given in capital.  otherwise will give error
+        System.out.println(ld5.format(f));
+        DateTimeFormatter f2=DateTimeFormatter.ofPattern("dd-MMM-yyyy");
+        DateTimeFormatter f3=DateTimeFormatter.ofPattern("dd-MMMM-yyyy");
+        System.out.println(ld5.format(f2));
+        System.out.println(ld5.format(f3));
     }
 }
