@@ -1,11 +1,12 @@
 //Exception : Unwanted/unexperted behavior of program
 //Java has one of the best exception handling mechanism
 public class Exception1 {
-    //throw : throws an exception into the program
     int div(int v1, int v2) {
          return v1/v2;
     }
-    int div2(int v1, int v2) throws Exception{
+    //throw : throws an exception into the program at very point
+    int div2(int v1, int v2) throws Exception{  //throws will tell the compiler that this function is throwing an exception
+        //this is telling the compiler that this function is throwing Exception
         if(v2==0) throw new Exception("You can't divide a number a zero");
         return v1/v2;
     }
@@ -38,7 +39,8 @@ public class Exception1 {
             System.out.println(e);
         }finally {
             System.out.println("finally in the block!!");
-        }
+        } //this block will not be executed since there is exit statement in the catch block
+        //if there is no exit statement, it will run for sure
         System.out.println("hey that was the div result 2");
 
 //        Exception1 obj3=new Exception1();
