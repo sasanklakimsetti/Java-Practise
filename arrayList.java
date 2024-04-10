@@ -1,5 +1,9 @@
 // Collections in java
+//Lists
+//types
 // ArrayList
+//Vector
+//LinkedList
 import java.util.ArrayList;
 import java.util.List;
 
