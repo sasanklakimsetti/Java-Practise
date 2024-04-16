@@ -3,9 +3,12 @@
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Queues {
     public static void main(String[] args){
+        //LinkedList
         LinkedList<Integer> ll=new LinkedList<>();
         ll.add(5);
         ll.add(1);
@@ -26,5 +29,23 @@ public class Queues {
         Iterator<Integer> it=ll.iterator();
         while (it.hasNext())
             System.out.print(it.next()+" ");
+
+        System.out.println();
+        //PriorityQueue
+        Queue<Integer> pq=new PriorityQueue<>();
+        pq.add(1);
+        pq.add(10);
+        pq.add(5);
+        pq.add(50);
+        System.out.println("The priority queue is "+pq+" of size "+pq.size());
+        System.out.println(pq.poll());
+        System.out.println(pq.peek());
+        System.out.println(pq.peek());
+        System.out.println("Using iterators");
+        Iterator<Integer> it2=pq.iterator();
+        while (it2.hasNext()){
+            System.out.print(it2.next()+" ");
+        }
+        //this will
     }
 }

@@ -6,7 +6,7 @@
 //LinkedHashMap : order of insertion is maintained
 import java.util.HashMap;
 import java.util.Map;
-public class Map_1 {
+public class Maps {
     public static void main(String[] args){
         // HashMap
         HashMap<String, Integer> hm=new HashMap<>();
