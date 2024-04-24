@@ -9,7 +9,7 @@ class TreeNode{
     TreeNode left;
     TreeNode right;
 
-    public TreeNode(int i) {val=i;}
+    public TreeNode(int i) {val=i;} // constructor to assign the value in the tree
 }
 
 public class RandomTask3 {
