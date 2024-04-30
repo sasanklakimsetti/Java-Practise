@@ -13,6 +13,7 @@ public class TribonacciSeries {
         }
         return arr[arr.length-1];
     }
+    //tc: O(N)
     // extra space required for the array
     //approach 2
     static int tribonacci2(int n){
@@ -29,12 +30,23 @@ public class TribonacciSeries {
         }
         return n3;
     }
+    //approach 3
+    static int tribonacci3(int n){
+        if(n==1) return 0;
+        else if(n==2||n==3) return 1;
+        int n1=tribonacci3(n-1);
+        int n2=tribonacci3(n-2);
+        int n3=tribonacci3(n-3);
+        return n1+n2+n3;
+    }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.print("enter n: ");int n=sc.nextInt();
         int element=tribonacci1(n);
-        System.out.println("The nth element of the tribonacci series with n="+n+"using 1st approach is "+element);
+        System.out.println("The nth element of the tribonacci series with n="+n+" using 1st approach is "+element);
         int element2=tribonacci2(n);
-        System.out.println("The nth element of the tribonacci series with n="+n+"using 2nd approach is "+element2);
+        System.out.println("The nth element of the tribonacci series with n="+n+" using 2nd approach is "+element2);
+        int element3=tribonacci3(n);
+        System.out.println("The nth element of the tribonacci series with n="+n+" using 3rd approach is "+element3);
     }
 }

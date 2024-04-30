@@ -22,10 +22,10 @@ class PersoN<E,V>{
 }
 public class Generics1 {
     public static void main(String[] args){
-        Show<Double> obj=new Show(5.55,5.55);
+        Show<Double> obj=new Show<>(5.55,5.55);
         obj.show();
 
-        PersoN<String,Integer> p1=new PersoN("Sasank",19);
+        PersoN<String,Integer> p1=new PersoN<>("Sasank",19);
         PersoN<String,Integer> p2=new PersoN<>("Karthikeya",18);
         p1.intro();
         p2.intro();
